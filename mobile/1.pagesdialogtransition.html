@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Mobile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widtth=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+       <div data-role="page" id="page1" data-theme="b">
+           <div data-role="header">
+                <h1>Page 1</h1>
+           </div>
+           <div role="main" class="ui-content">
+                <a data-role="button" href="#page2" data-transition="flip">Go to page 2</a>
+                <a data-role="button" href="dialog.html" data-transition="slide" data-rel="dialog">Open Dialog</a>
+           </div>  
+            <div data-role="footer" data-position="fixed">
+                    <h1>footer</h1>
+            </div>
+       </div>
+
+
+       <!---page2-->
+       <div data-role="page" id="page2" data-theme="b">
+        <div data-role="header">
+             page 2
+        </div>
+        <div role="main" class="ui-content">
+             <a data-role="button" href="#page1" data-transition="pop">go to page 1</a>
+        </div>  
+         <div data-role="footer" data-position="fixed">
+                 <h1>footer</h1>
+         </div>
+    </div>
+    <!--page2-->
+    </body>
+</html>
